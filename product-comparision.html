@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparision</title>
+    <link rel="stylesheet" href="./public/Css/style.css">
+    <link rel="icon" type="image/x-icon" href="./public/Images/cart/Asgaard sofa 3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- nav-bar section start -->
+    <section class="navbar pt-md-4 pb-md-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-content d-flex align-items-center gap-1">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid" />
+                <h2 class="mb-0">Furniro</h2>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex list-unstyled gap-5 mb-0">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex navbar-rhs list-unstyled gap-5 mb-0">
+                    <li><i class="bi bi-person-exclamation"></i></li>
+                    <li><i class="bi bi-search"></i></li>
+                    <li><i class="bi bi-heart"></i></li>
+                    <li><i class="bi bi-cart3"></i></li>
+                </ul>
+            </div>
+            <div class="hide-desktop">
+                <i class="bi bi-list" data-bs-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;" class="active">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <!-- nav-bar section end -->
+    <!-- hero-bg section start -->
+    <section class="hero-sec-bg">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <h2>Product Comparison</h2>
+                <p>Home > <span>Comparision</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- hero-bg section start -->
+
+    <!-- Go-TO Product Section Start -->
+    <!-- <section class="go-to-product-sec pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <h2>Go to Product <br /> page for more <br /> Products</h2>
+                        <p class="view-more">View More</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="go-to-product-second-col">
+                        <img src="./public/Images/Product-comparision/Asgaard sofa 3.png" alt="Asgaard-sofa"
+                            class="img-fluid">
+                        <h4>Asgaard Sofa</h4>
+                        <h5>Rs. 250,000.00</h5>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="rating-para mb-0">4.7</p>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="mb-0 review-para">204 Review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="go-to-product-second-col">
+                        <img src="./public/Images/Product-comparision/Outdoor sofa set 1.png" alt="Asgaard-sofa"
+                            class="img-fluid">
+                        <h4>Asgaard Sofa</h4>
+                        <h5>Rs. 250,000.00</h5>
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="rating-para mb-0 ">4.7</p>
+                            <div>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="mb-0 review-para">204 Review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="go-to-product-third-col pt-5">
+                        <h3>Add A Product</h3>
+                        <select name="Choose a Product">
+                            <option>Choose a Product</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Go-TO Product Section End -->
+
+    <!-- General Section Start -->
+
+    <section class="general-sec">
+        <div class="container">
+            <div class="comparision-table" style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="right-border">
+                                <div>
+                                    <h2>Go to Product <br /> page for more <br /> Products</h2>
+                                    <p class="view-more">View More</p>
+                                </div>
+                            </th>
+                            <th class="right-border">
+                                <div class="go-to-product-second-col">
+                                    <img src="./public/Images/Product-comparision/Asgaard sofa 3.png" alt="Asgaard-sofa"
+                                        class="img-fluid">
+                                    <h4>Asgaard Sofa</h4>
+                                    <h5>Rs. 250,000.00</h5>
+                                    <div class="d-flex icon-content align-items-center gap-md-2">
+                                        <p class="rating-para mb-0">4.7</p>
+                                        <div class="d-flex align-items-center gap-md-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <p class="mb-0 review-para">204 Review</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="right-border">
+                                <div class="go-to-product-third-col">
+                                    <img src="./public/Images/Product-comparision/Outdoor sofa set 1.png"
+                                        alt="Asgaard-sofa" class="img-fluid">
+                                    <h4>Asgaard Sofa</h4>
+                                    <h5>Rs. 250,000.00</h5>
+                                    <div class="d-flex align-items-center gap-md-2">
+                                        <p class="rating-para mb-0">4.7</p>
+                                        <div class="d-flex align-items-center gap-md-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </div>
+                                        <p class="mb-0 review-para">204 Review</p>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="right-border">
+                                <div class="go-to-product-third-col pt-5">
+                                    <h3>Add A Product</h3>
+                                    <select name="Choose a Product">
+                                        <option>Choose a Product</option>
+                                    </select>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <th class="border-top">General </th>
+                            <th class="border-top"></th>
+                            <th class="border-top"></th>
+                            <th class="blank-td border-top"></th>
+                        </tr>
+                        <tr>
+                            <td>Sales Package</td>
+                            <td>1 sectional sofa</td>
+                            <td>1 Three Seater, 2 Single Seater</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Model Number</td>
+                            <td>TFCBLIGRBL6SRHS</td>
+                            <td>DTUBLIGRBL568</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Secondary Material</td>
+                            <td>Solid Wood</td>
+                            <td>Solid Wood</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Configuration</td>
+                            <td>L-shaped</td>
+                            <td>L-shaped</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Upholstery Material</td>
+                            <td>Fabric + Cotton</td>
+                            <td>Fabric + Cotton</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Upholstery Color</td>
+                            <td>Bright Grey & Lion</td>
+                            <td>Bright Grey & Lion</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                    </thead>
+
+                    <thead>
+                        <tr>
+                            <th>Product </th>
+                            <th></th>
+                            <th></th>
+                            <th class="blank-td"></th>
+                        </tr>
+                        <tr>
+                            <td>Filling Material</td>
+                            <td>Foam</td>
+                            <td>Matte</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Finish Type</td>
+                            <td>Bright Grey & Lion</td>
+                            <td>Bright Grey & Lion</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>SAdjustable Headrest</td>
+                            <td>No</td>
+                            <td>yes</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Load Capacity</td>
+                            <td>280 KG</td>
+                            <td>300 KG</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Origin of Manufacture</td>
+                            <td>India</td>
+                            <td>India</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                    </thead>
+
+                    <thead>
+                        <tr>
+                            <th>Dimensions </th>
+                            <th></th>
+                            <th></th>
+                            <th class="blank-td"></th>
+                        </tr>
+                        <tr>
+                            <td>Width</td>
+                            <td>265.32 cm</td>
+                            <td>265.32 cm</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>76 cm</td>
+                            <td>76 cm</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Depth</td>
+                            <td>167.76 cm</td>
+                            <td>167.76 cm</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>45 KG</td>
+                            <td>65 KG</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Seat Height</td>
+                            <td>41.52 cm</td>
+                            <td>41.52 cm</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Leg Height</td>
+                            <td>5.46 cm</td>
+                            <td>5.46 cm</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                    </thead>
+
+                    <thead>
+                        <tr>
+                            <th>Warranty </th>
+                            <th></th>
+                            <th></th>
+                            <th class="blank-td"></th>
+                        </tr>
+                        <tr>
+                            <td>Warranty Summary</td>
+                            <td>1 Year Manufacturing Warranty</td>
+                            <td>1.2 Year Manufacturing Warranty</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Warranty Service Type</td>
+                            <td>For Warranty Claims or Any Product Related Issues Please Email at
+                                operations@trevifurniture.com</td>
+                            <td>For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Covered in Warranty</td>
+                            <td>Warranty Against Manufacturing Defect</td>
+                            <td>Warranty of the product is limited to manufacturing defects only.</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Not Covered in Warranty</td>
+                            <td>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use
+                                And Wear & Tear In The Natural Course Of Product Usage.</td>
+                            <td>The Warranty Does Not Cover Damages Due To Usage Of The Product Beyond Its Intended Use
+                                And Wear & Tear In The Natural Course Of Product Usage.</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td>Domestic Warranty</td>
+                            <td>1 Year</td>
+                            <td>3 Months</td>
+                            <td class="blank-td"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button>Add To Cart</button></td>
+                            <td><button>Add To Cart</button></td>
+                            <td class="blank-td"></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Section End -->
+
+    <!-- quality section start -->
+
+    <section class="high-quality-sec mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003219.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>High Quality</h4>
+                            <p class="mb-0">crafted from top materials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003230.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Warranty Protection</h4>
+                            <p class="mb-0">Over 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003245.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Free Shipping</h4>
+                            <p class="mb-0">Order over 150 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003259.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>24 / 7 Support</h4>
+                            <p class="mb-0">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- quality section end -->
+</body>
+
+<!-- footer section start -->
+<footer>
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="funiro-address">
+                        <h3>Funiro.</h3>
+                        <p>400 University Drive Suite 200 Coral <br /> Gables,<br />
+                            FL 33134 USA</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-links">
+                        <h4>Links</h4>
+                        <div>
+                            <p class="mb-0">Home</p>
+                            <p class="mb-0">Shop</p>
+                            <p class="mb-0">About</p>
+                            <p class="mb-0">Contact</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-links">
+                        <h4>Help</h4>
+                        <div>
+                            <p class="mb-0">Payment Options</p>
+                            <p class="mb-0">Returns</p>
+                            <p class="mb-0">Privacy Policies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-newsletter">
+                        <h4>Newsletter</h4>
+                        <div class="d-flex gap-2">
+                            <input type="text" placeholder="Enter Your Email Address">
+                            <button class="text-uppercase">Subscribe</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <p class="mb-0">2023 furino. All rights reverved</p>
+</footer>
+<!-- footer section end -->
+
+</html>

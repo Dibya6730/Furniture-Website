@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Furniture</title>
+    <link rel="stylesheet" href="./public/Css/style.css">
+    <link rel="icon" type="image/x-icon" href="./public/Images/cart/Asgaard sofa 3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Checkout nav-bar section start -->
+    <section class="navbar pt-md-4 pb-md-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-content d-flex align-items-center gap-1">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid" />
+                <h2 class="mb-0">Furniro</h2>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex list-unstyled gap-5 mb-0">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex navbar-rhs list-unstyled gap-5 mb-0">
+                    <li><i class="bi bi-person-exclamation"></i></li>
+                    <li><i class="bi bi-search"></i></li>
+                    <li><i class="bi bi-heart"></i></li>
+                    <li><i class="bi bi-cart3"></i></li>
+                </ul>
+            </div>
+            <div class="hide-desktop">
+                <i class="bi bi-list" data-bs-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;" class="active">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout nav-bar section end -->
+    <!-- Checkout-Hero-Bg Section Start -->
+    <section class="hero-sec-bg">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid logo-img">
+                <h2>Checkout</h2>
+                <p>Home > <span>Checkout</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Hero-Bg Section End -->
+
+    <!-- Billing Section Start -->
+
+    <section class="billing-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="biiling-sec-LHS" style="padding-left: 7%; padding-right: 7%;">
+                        <form>
+                            <h2>Billing details</h2>
+                            <div class="d-flex gap-4">
+                                <div class="upper-input">
+                                    <label>First Name</label> <br>
+                                    <input type="text">
+                                </div>
+                                <div class="upper-input">
+                                    <label>Last Name</label> <br>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div>
+                                <label>Company Name (Optional)</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Country / Region</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Street address</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Town / City</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Province</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>ZIP code</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Phone</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <label>Email address</label> <br>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Additional information">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="billing-sec-RHS ">
+                        <div class="d-flex justify-content-between">
+                            <h4>Product</h4>
+                            <h4>Subtotal</h4>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="asg-sofa">Asgaard sofa <span>&nbsp;X &nbsp; 1</span></p>
+                            <p class="billing-rs-para">Rs. 250,000.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="billing-sub-total-para">Subtotal</p>
+                            <p class="billing-rs-para">Rs. 250,000.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="billing-sub-total-para">Total</p>
+                            <p class="total-rs-para">Rs. 250,000.00</p>
+                        </div>
+                        <hr />
+                        <div class="direct-h d-flex align-items-center gap-2 pt-2">
+                            <div>
+                                <input type="radio">
+                            </div>
+                            <h3>Direct Bank Transfer</h3>
+                        </div>
+                        <p class="make-payment-para">Make your payment directly into our bank account. Please use your
+                            Order ID as the payment
+                            reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                        <div class="direct-bank-h d-flex align-items-center gap-2  pb-2">
+                            <div>
+                                <input type="radio">
+                            </div>
+                            <h3>Direct Bank Transfer</h3>
+                        </div>
+                        <div class="direct-bank-h d-flex align-items-center gap-2 pb-2">
+                            <div>
+                                <input type="radio">
+                            </div>
+                            <h3>Direct Bank Transfer</h3>
+                        </div>
+                        <p class="your-personal-para">Your personal data will be used to support your experience
+                            throughout this website, to manage
+                            access to your account, and for other purposes described in our <span>privacy policy.</span>
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <button>Place order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Billing Section Start -->
+
+    <!-- Checkout quality section start -->
+
+    <section class="high-quality-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003219.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>High Quality</h4>
+                            <p class="mb-0">crafted from top materials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003230.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Warranty Protection</h4>
+                            <p class="mb-0">Over 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003245.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Free Shipping</h4>
+                            <p class="mb-0">Order over 150 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003259.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>24 / 7 Support</h4>
+                            <p class="mb-0">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout quality section end -->
+
+    <!-- footer section start -->
+    <footer>
+        <section class="footer-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="funiro-address">
+                            <h3>Funiro.</h3>
+                            <p>400 University Drive Suite 200 Coral <br /> Gables,<br />
+                                FL 33134 USA</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-links">
+                            <h4>Links</h4>
+                            <div>
+                                <p class="mb-0">Home</p>
+                                <p class="mb-0">Shop</p>
+                                <p class="mb-0">About</p>
+                                <p class="mb-0">Contact</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-links">
+                            <h4>Help</h4>
+                            <div>
+                                <p class="mb-0">Payment Options</p>
+                                <p class="mb-0">Returns</p>
+                                <p class="mb-0">Privacy Policies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-newsletter">
+                            <h4>Newsletter</h4>
+                            <div class="d-flex gap-2">
+                                <input type="text" placeholder="Enter Your Email Address">
+                                <button class="text-uppercase">Subscribe</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <p class="mb-0">2023 furino. All rights reverved</p>
+    </footer>
+    <!-- footer section end -->

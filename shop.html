@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Furniture</title>
+    <link rel="stylesheet" href="./public/Css/style.css">
+    <link rel="icon" type="image/x-icon" href="./public/Images/cart/Asgaard sofa 3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- nav-bar section start -->
+    <section class="navbar pt-md-4 pb-md-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-content d-flex align-items-center gap-1">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid" />
+                <h2 class="mb-0">Furniro</h2>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex list-unstyled gap-5 mb-0">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex navbar-rhs list-unstyled gap-5 mb-0">
+                    <li><i class="bi bi-person-exclamation"></i></li>
+                    <li><i class="bi bi-search"></i></li>
+                    <li><i class="bi bi-heart"></i></li>
+                    <li data-bs-toggle="modal" data-bs-target="#myModal"><i class="bi bi-cart3"></i></li>
+                </ul>
+            </div>
+            <div class="hide-desktop">
+                <i class="bi bi-list" data-bs-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;" class="active">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <!-- nav-bar section end -->
+    <!-- hero-bg section start -->
+    <section class="hero-sec-bg">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <h2>Shop</h2>
+                <p>Home > <span>Shop</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- hero-bg section start -->
+
+    <!-- filter section start -->
+    <section class="filter-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex gap-4 align-items-center">
+                        <img src="./public/Icons/system-uicons_filtering.png" alt="filter" class="img-fluid">
+                        <p class="mb-0">Filter</p>
+                        <img src="./public/Icons/ci_grid-big-round.png" alt="grid" class="img-fluid">
+                        <img src="./public/Icons/bi_view-list.png" alt="view-list" class="img-fluid">
+                        <p class="mb-0 Showing">Showing 1–16 of 32 results</p>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-mobile">
+                    <div class="d-flex align-items-center justify-content-end gap-4">
+                        <p class="mb-0">Show</p>
+                        <input type="number" placeholder="16" class="show-input">
+                        <p class="mb-0">Short by</p>
+                        <select class="shortby">
+                            <option>Default</option>
+                            <option>Option1</option>
+                            <option>Option2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 hide-desktop">
+                    <div class="d-flex align-items-center justify-content-start mt-3 gap-4">
+                        <p class="mb-0">Show</p>
+                        <input type="number" placeholder="16" class="show-input">
+                        <p class="mb-0">Short by</p>
+                        <select class="shortby">
+                            <option>Default</option>
+                            <option>Option1</option>
+                            <option>Option2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- filter section start -->
+
+    <!-- product-sec start -->
+    <section class="product-sec mt-5">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-0" style="background-color:#F4F5F7; position: relative;">
+                            <a href="single-product.html"><img src="./public/Images/Home/Images.png" alt="img1"
+                                    class="img-fluid"></a>
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.00</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/image 2 (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (2).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge" style="background-color: #2EC1AC;">
+                                <p class="mb-0">New</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="background-color:#F4F5F7; position: relative;">
+                            <img src="./public/Images/Home/Images.png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.00</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/image 2 (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (2).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge" style="background-color: #2EC1AC;">
+                                <p class="mb-0">New</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="background-color:#F4F5F7; position: relative;">
+                            <img src="./public/Images/Home/Images.png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.00</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/image 2 (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (2).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge" style="background-color: #2EC1AC;">
+                                <p class="mb-0">New</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="background-color:#F4F5F7; position: relative;">
+                            <img src="./public/Images/Home/Images.png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.00</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-30%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/image 2 (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (1).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge">
+                                <p class="mb-0">-50%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0" style="color:#F4F5F7;">
+                            <img src="./public/Images/Home/Images (2).png" alt="img1" class="img-fluid">
+                            <div class="p-3">
+                                <h3 class="product-card-title">Syltherine</h3>
+                                <p class="product-card-para mb-2">Stylish cafe chair</p>
+                                <p class="product-price">Rp 2.500.000 &nbsp;&nbsp;<small style="color: #B0B0B0;"><del>Rp
+                                            3.500.000</del></small></p>
+                            </div>
+                            <div class="discount-badge" style="background-color: #2EC1AC;">
+                                <p class="mb-0">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-num text-center gap-5 pb-5">
+                    <button class="page-btn-1">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-sec end -->
+
+    <!-- quality section start -->
+
+    <section class="high-quality-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003219.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>High Quality</h4>
+                            <p class="mb-0">crafted from top materials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003230.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Warranty Protection</h4>
+                            <p class="mb-0">Over 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003245.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Free Shipping</h4>
+                            <p class="mb-0">Order over 150 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003259.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>24 / 7 Support</h4>
+                            <p class="mb-0">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- quality section end -->
+
+</body>
+
+<!-- footer section start -->
+<footer>
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="funiro-address">
+                        <h3>Funiro.</h3>
+                        <p>400 University Drive Suite 200 Coral <br /> Gables,<br />
+                            FL 33134 USA</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-links">
+                        <h4>Links</h4>
+                        <div>
+                            <p class="mb-0">Home</p>
+                            <p class="mb-0">Shop</p>
+                            <p class="mb-0">About</p>
+                            <p class="mb-0">Contact</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-links">
+                        <h4>Help</h4>
+                        <div>
+                            <p class="mb-0">Payment Options</p>
+                            <p class="mb-0">Returns</p>
+                            <p class="mb-0">Privacy Policies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="funiro-newsletter">
+                        <h4>Newsletter</h4>
+                        <div class="d-flex gap-2">
+                            <input type="text" placeholder="Enter Your Email Address">
+                            <button class="text-uppercase">Subscribe</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <p class="mb-0">2023 furino. All rights reverved</p>
+</footer>
+<!-- footer section end -->
+<div class="add-to-cart">
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+
+                    <h2>Shopping Cart</h2>
+                    <i class="bi bi-bag-x" data-bs-dismiss="modal"></i>
+
+                </div>
+                <div>
+                    <div class="d-flex pt-5 pb-3 justify-content-center align-items-center gap-4">
+                        <div class="cart-img">
+                            <img src="./public/Images/Single-product/Asgaard sofa 3.png" alt="sofa" class="img-fluid">
+                        </div>
+                        <div>
+                            <p class="cart-para mb-1">Asgaard sofa</p>
+                            <p class="cart-para-2 mb-0">1 &nbsp;&nbsp;X&nbsp;&nbsp;
+                                <span>Rs. 250,000.00</span>
+                            </p>
+                        </div>
+                        <div>
+                            <i class="bi bi-x-circle-fill" data-bs-dismiss="modal"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex pt-2 justify-content-center align-items-center gap-4">
+                        <div class="cart-img">
+                            <img src="./public/Images/Single-product/Asgaard sofa 5.png" alt="sofa" class="img-fluid">
+                        </div>
+                        <div>
+                            <p class="cart-para mb-1">Casaliving Wood</p>
+                            <p class="cart-para-2 mb-0">1 &nbsp;&nbsp;X&nbsp;&nbsp;
+                                <span>Rs. 270,000.00</span>
+                            </p>
+                        </div>
+                        <div>
+                            <i class="bi bi-x-circle-fill" data-bs-dismiss="modal"></i>
+                        </div>
+                    </div>
+
+                    <div class="d-flex cart-content pb-3">
+                        <p class="sub-para mb-0">Subtotal</p>
+                        <p class="rs-para mb-0">Rs. 520,000.00</p>
+                    </div>
+                    <hr />
+                    <div class="d-flex cart-btns align-items-center gap-3 pt-2 justify-content-center pb-4">
+                        <a href="cart.html" style="text-decoration: none;"><button class="cart-btn">Cart</button></a>
+                        <a href="checkout.html" style="text-decoration: none;"><button
+                                class="checkout-btn">Checkout</button></a>
+                        <a href="product-comparision.html" style="text-decoration: none;"><button
+                                class="compare-btn">Comparision</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart - Furniture</title>
+    <link rel="stylesheet" href="./public/Css/style.css">
+    <link rel="icon" type="image/x-icon" href="./public/Images/cart/Asgaard sofa 3.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- nav-bar section start -->
+    <section class="navbar pt-md-4 pb-md-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-content d-flex align-items-center gap-1">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid" />
+                <h2 class="mb-0">Furniro</h2>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex list-unstyled gap-5 mb-0">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="hide-mobile">
+                <ul class="d-flex navbar-rhs list-unstyled gap-5 mb-0">
+                    <li><i class="bi bi-person-exclamation"></i></li>
+                    <li><i class="bi bi-search"></i></li>
+                    <li><i class="bi bi-heart"></i></li>
+                    <li><i class="bi bi-cart3"></i></li>
+                </ul>
+            </div>
+            <div class="hide-desktop">
+                <i class="bi bi-list" data-bs-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <a href="index.html" style="text-decoration: none;">
+                        <li>Home</li>
+                    </a>
+                    <a href="shop.html" style="text-decoration: none;">
+                        <li>Shop</li>
+                    </a>
+                    <a href="./blog.html" style="text-decoration: none;" class="active">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html" style="text-decoration: none;">
+                        <li>Contact</li>
+                    </a>
+            </div>
+        </div>
+    </section>
+    <!-- nav-bar section end -->
+    <!-- Cart-Hero-Bg Section Start -->
+    <section class="hero-sec-bg">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <img src="./public/Logo/Meubel House_Logos-05.png" alt="logo" class="img-fluid logo-img">
+                <h2>Cart</h2>
+                <p>Home > <span>Cart</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- Cart Hero-Bg Section End -->
+
+    <!-- Cart-Total Section Start -->
+
+    <section class="cart-total-sec pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 cart-total-sec-LHS">
+                    <!-- <table>
+                        <thead class="table-H">
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tr class="cart-data">
+                            <tbody>
+                                <td>
+                                    <img src="./public/Images/cart/Asgaard sofa 3.png" alt="sofa-img" class="img-fluid">
+                                </td>
+                                <td>Asgaard sofa</td>
+                                <td>Rs. 250,000.00</td>
+                                <td class="one-btn">1</td>
+                                <td>Rs. 250,000.00</td>
+                                <td>
+                                    <img src="./public/Images/cart/Vector (3).png" alt="delete" class="img-fluid">
+                                </td>
+                            </tbody>
+                        </tr>
+                    </table> -->
+
+                    <table class=" table table-borderless">
+                        <thead class="theadd">
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-Data ">
+                                <td>
+                                    <img src="./public/Images/cart/Asgaard sofa 3.png" alt="sofa-img" class="img-fluid">
+                                </td>
+                                <td>
+                                    <p class="mb-0 ">Asgaard sofa</p>
+                                </td>
+                                <td>
+                                    <p>Rs. 250,000.00</p>
+                                </td>
+                                <td>
+                                    <input type="number" value="1">
+                                </td>
+                                <td>
+                                    <p>Rs. 250,000.00</p>
+                                </td>
+                                <td>
+                                    <img src="./public/Images/cart/Vector (3).png" style="height: 22px; width:20px;"
+                                        alt="delete" class="img-fluid">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="cart-total-RHS">
+                        <h2>Cart Totals</h2>
+                        <div class="d-flex align-items-center justify-content-center gap-5 pb-4">
+                            <p class="mb-0 cart-tool-para">Subtotal</p>
+                            <p class="mb-0 sub-rs">Rs. 250,000.00</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-5 pb-4">
+                            <p class="mb-0 cart-tool-para">Total</p>
+                            <p class="mb-0 total-rs">Rs. 250,000.00</p>
+                        </div>
+                        <div>
+                            <button>Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart-Total Section Start -->
+
+    <!-- Cart High Quality Section Start -->
+
+    <section class="high-quality-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003219.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>High Quality</h4>
+                            <p class="mb-0">crafted from top materials</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003230.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Warranty Protection</h4>
+                            <p class="mb-0">Over 2 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003245.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>Free Shipping</h4>
+                            <p class="mb-0">Order over 150 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 high-quality-content">
+                    <div class="d-flex align-items-center gap-2">
+                        <div>
+                            <img src="./public/Icons/Screenshot 2025-01-10 003259.png" alt="champion" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4>24 / 7 Support</h4>
+                            <p class="mb-0">Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart High Quality Section End -->
+
+    <!-- footer section start -->
+    <footer>
+        <section class="footer-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="funiro-address">
+                            <h3>Funiro.</h3>
+                            <p>400 University Drive Suite 200 Coral <br /> Gables,<br />
+                                FL 33134 USA</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-links">
+                            <h4>Links</h4>
+                            <div>
+                                <p class="mb-0">Home</p>
+                                <p class="mb-0">Shop</p>
+                                <p class="mb-0">About</p>
+                                <p class="mb-0">Contact</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-links">
+                            <h4>Help</h4>
+                            <div>
+                                <p class="mb-0">Payment Options</p>
+                                <p class="mb-0">Returns</p>
+                                <p class="mb-0">Privacy Policies</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="funiro-newsletter">
+                            <h4>Newsletter</h4>
+                            <div class="d-flex gap-2">
+                                <input type="text" placeholder="Enter Your Email Address">
+                                <button class="text-uppercase">Subscribe</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <p class="mb-0">2023 furino. All rights reverved</p>
+    </footer>
+    <!-- footer section end -->
